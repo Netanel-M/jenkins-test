@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                python helloworld.py
+                sh 'python helloworld.py'
             }
         }
     }
